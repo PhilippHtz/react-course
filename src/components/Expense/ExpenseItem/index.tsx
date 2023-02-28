@@ -1,11 +1,11 @@
 import { FC } from "react";
-import ExpenseDate from "../ExpenseDate";
-import ExpensePrice from "../ExpensePrice";
-import ExpenseTitle from "../ExpenseTitle";
+import ExpenseDate from "../ExpenseItemDate";
+import ExpensePrice from "../ExpenseItemPrice";
+import ExpenseTitle from "../ExpenseItemTitle";
 import { StyledExpenseItem } from "./styles";
 
 export type ExpenseItemProps = {
-  id: string;
+  id: number;
   date: Date;
   title: string;
   price: number;

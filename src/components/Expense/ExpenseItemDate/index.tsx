@@ -1,4 +1,5 @@
 import { FC } from "react";
+import GlobalStyles from "../../../globalStyles";
 import { ExpenseItemProps } from "../ExpenseItem";
 import { StyledExpenseDate } from "./styles";
 

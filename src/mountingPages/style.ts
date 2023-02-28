@@ -9,6 +9,6 @@ export const sectionStyle = css`
   max-width: 75vw;
   min-width: 71rem;
 
-  border-radius: 1.5rem;
   background-color: ${BG_Accent_Secondary};
+  border-radius: 1.5rem;
 `;

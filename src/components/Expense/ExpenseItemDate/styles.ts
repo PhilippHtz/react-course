@@ -1,16 +1,17 @@
 import { css } from "@emotion/react";
-import { DesignTokens } from "../../globalStyles";
+import { DesignTokens } from "../../../globalStyles";
 
 const { BG_Accent } = DesignTokens;
 
 export const StyledExpenseDate = css`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 
-  padding: 2rem;
-  width: 13.5rem;
-  min-height: 13.5rem;
+  padding: 1.5rem 0;
+  width: 18rem;
+  min-height: 14rem;
 
   background-color: ${BG_Accent};
 
