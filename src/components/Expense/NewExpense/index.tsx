@@ -1,21 +1,14 @@
 import NewExpenseControl from "../NewExpenseControl";
-import { NewExpenseControlData } from "./NewExpenseData";
-import { formStyle } from "./style";
+import { formStyle } from "./styles";
 
 const NewExpense = () => {
   return (
     <>
       <form action='' css={formStyle}>
-        {NewExpenseControlData.map((expenseControl, index) => {
-          return (
-            <NewExpenseControl
-              type={expenseControl.type}
-              inputID={expenseControl.inputID}
-              label={expenseControl.label}
-              key={index}
-            />
-          );
-        })}
+        <NewExpenseControl type='date' inputID='date' label='Date' />
+        <NewExpenseControl type='text' inputID='title' label='Title' />
+        <NewExpenseControl type='number' inputID='price' label='Price' />
+        <NewExpenseControl type='submit' />
       </form>
     </>
   );

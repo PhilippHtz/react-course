@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { DesignTokens } from "../../globalStyles";
+import { DesignTokens } from "../../../globalStyles";
 
 const { BG_Secondary } = DesignTokens;
 
