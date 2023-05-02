@@ -9,43 +9,33 @@ export type NewExpenseControlProps = {
 };
 
 const NewExpenseControl: FC<NewExpenseControlProps> = ({ inputID, type, label }) => {
-  const [userInput, setUserInput] = useState(() => {
-    return {
-      title: "",
-      price: "",
-      date: "",
-    };
+  const [title, setTitle] = useState(() => {
+    return "";
+  });
+  const [price, setPrice] = useState(() => {
+    return "";
+  });
+  const [date, setDate] = useState(() => {
+    return "";
   });
 
   //Im a comment
   const titleChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    setUserInput(
-      newTitle =>
-        (newTitle = {
-          ...userInput,
-          title: event.target.value,
-        })
-    );
+    setTitle(prevTitle => {
+      return (prevTitle = event.target.value);
+    });
   };
 
   const priceChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    setUserInput(
-      newPrice =>
-        (newPrice = {
-          ...userInput,
-          price: event.target.value,
-        })
-    );
+    setPrice(prevPrice => {
+      return (prevPrice = event.target.value);
+    });
   };
 
   const dateChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    setUserInput(
-      newDate =>
-        (newDate = {
-          ...userInput,
-          date: event.target.value,
-        })
-    );
+    setDate(prevDate => {
+      return (prevDate = event.target.value);
+    });
   };
 
   if (type === "submit") {
