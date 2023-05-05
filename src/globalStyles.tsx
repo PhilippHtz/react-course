@@ -50,6 +50,7 @@ const GlobalStyles = () => {
         #root {
           padding: 2rem;
           min-height: 100vh;
+          background-color: ${DesignTokens.BG_Accent_Secondary};
         }
       `}
     />
